@@ -1,0 +1,19 @@
+.list{
+width: 65%;
+margin: auto;
+margin-top: 2em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(12em,1fr));
+  gap: 0.5em;
+  margin-top: 2em;
+
+}
+
+.dropdown{
+  position: absolute;
+  right: 1em;
+}
+

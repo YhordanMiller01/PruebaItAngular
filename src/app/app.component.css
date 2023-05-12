@@ -1,0 +1,19 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content{
+  margin: 0;
+  background-color: bisque;
+  float: 1;
+  width: 100%;
+  height: auto;
+}
+
+.imagen_angular{
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}

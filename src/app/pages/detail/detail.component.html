@@ -1,0 +1,28 @@
+<div class="detail-card" *ngIf="card$ |async as card">
+ <div class="top">
+  <img src="{{card.userImageURL}}">
+ </div>
+ <div class="bottom">
+    <h4>Nombre Imagen</h4>
+    <div class="item">
+      <h3 class="tittle">{{card.user}}</h3>
+      <p class="description">Descripción</p>
+    </div>
+    <table class="table">
+      <thead class="">
+        <tr class="">
+          <th class="" scope="col">Tags</th>
+          <th class="" scope="col">Cantidad de Vistas</th>
+          <th class="" scope="col">Cantidad de me Gusta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="">
+          <th class="" scope="col">{{card.tags}}</th>
+          <th class="" scope="col">{{card.views}}</th>
+          <th class="" scope="col">{{card.likes}}</th>
+        </tr>
+      </tbody>
+    </table>
+ </div>
+</div>

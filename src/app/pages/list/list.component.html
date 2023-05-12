@@ -1,0 +1,24 @@
+<div class="list"
+      infiniteScroll
+      [infiniteScrollDistance]="2"
+      [infiniteScrollThrottle]="200"
+      (scrolled)="onScroll()"
+>
+<div class="dropdown" >
+  <select class="form-control" [formControl]="carSelect" (change)="changeWebsite($event)">
+    <option disabled>Select Website</option>
+    <option value="">Choose Category</option>
+    <option *ngFor="let web of filterCategory">{{web}}</option>
+</select>
+</div>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Search for an image"
+    [formControl]="cardText"
+  >
+  <div class="cards">
+    <app-card *ngFor="let card of cards" [card]="card"></app-card>
+  </div>
+</div>
+
